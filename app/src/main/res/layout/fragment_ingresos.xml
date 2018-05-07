@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.money.fragment.IngresosFragment">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="INGRESE INGRESOS"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            android:text=" Ingrese Descripcion"/>
+
+        <EditText
+            android:id="@+id/descripcion_ingreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:ems="16"
+            android:hint="  Descripcion"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text=" Monto"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="4"
+                android:textSize="18sp"
+                android:hint="S/"
+                android:gravity="end"/>
+
+            <EditText
+                android:id="@+id/monto_ingreso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="4"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:hint=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="Fecha"/>
+
+            <EditText
+                android:id="@+id/edit_fecha_ingreso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_marginStart="4dp"
+                android:hint="fecha"
+                android:gravity="end"/>
+            <EditText
+                android:id="@+id/edit_mes_ingreso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_marginStart="4dp"
+                android:hint="fecha"
+                android:gravity="end"/>
+            <EditText
+                android:id="@+id/edit_anio_ingreso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_marginStart="4dp"
+                android:hint="fecha"
+                android:gravity="end"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ver_lista_ingresos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ver lista"
+                android:background="@drawable/fondo_sesion"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"/>
+            <Button
+                android:id="@+id/agregar_ingreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="agregar"
+                android:background="@drawable/fondo_sesion"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

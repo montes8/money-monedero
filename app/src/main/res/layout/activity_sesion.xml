@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/principal_fondo"
+    tools:context="com.example.money.activitisopen.SesionActivity">
+
+    <TextView
+        android:id="@+id/text_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESION"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textColor="@color/titulo"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_sesion"
+        android:layout_marginStart="90dp"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/subtitulo"
+        android:text="Usuario"/>
+
+    <EditText
+        android:id="@+id/edit_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="nombre"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text_view_usuario"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_user"
+        android:background="@drawable/fondo_sesion"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/text_view_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_usuario"
+        android:layout_marginStart="90dp"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/subtitulo"
+        android:text="Contraseña"/>
+
+    <EditText
+        android:id="@+id/edit_pasword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_password"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_action_name"
+        android:hint="contraseña"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:background="@drawable/fondo_sesion"
+        android:inputType="textPassword"
+        />
+
+    <Switch
+        android:id="@+id/switch_recordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_below="@+id/edit_pasword"
+        android:layout_marginTop="20dp"
+        android:text="Recordar"/>
+
+    <Button
+        android:id="@+id/button_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_recordar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#757575"
+        android:padding="10dp"
+        android:background="@drawable/btn_fondo"
+        android:text="INGRESAR"/>
+
+
+</RelativeLayout>

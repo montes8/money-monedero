@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/principal_fondo"
+    tools:context="com.example.money.activitisopen.MainActivity">
+
+<ImageView
+
+    android:id="@+id/image_user"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/logo"
+    android:layout_marginTop="70dp"
+    android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_user"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:background="@drawable/fondo_sesion"
+        android:layout_marginTop="30dp"
+        android:text="Iniciar Sesion"
+        android:textSize="14sp"/>
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_sesion"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:background="@drawable/fondo_sesion"
+        android:layout_marginTop="30dp"
+        android:text="Registrarse"
+        android:textSize="14sp"/>
+
+
+
+
+
+</RelativeLayout>

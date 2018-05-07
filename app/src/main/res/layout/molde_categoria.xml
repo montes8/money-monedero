@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#757575"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        android:background="@drawable/fondo_sesion">
+    <ImageView
+        android:id="@+id/text_view_id"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:src="@drawable/cat"
+        />
+    <TextView
+        android:id="@+id/text_view_categoria"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:hint="CATEGORIA"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:ems="5"
+        android:layout_height="40dp"/>
+    <ImageView
+
+        android:layout_marginStart="40dp"
+        android:id="@+id/image_delete_categoria"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/ic_delete"/>
+    <ImageView
+
+        android:layout_marginStart="10dp"
+        android:id="@+id/image_edit_categoria"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/ic_edit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#757575"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/fondo_sesion">
+
+    <ImageView
+        android:id="@+id/text_view_id1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/text_view_nombre1"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:hint="nombre"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:ems="5"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/text_view_usuario1"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:hint="usuario"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:ems="5"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/text_view_password1"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:hint="password"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:ems="5"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/image_delete_user"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_delete"/>
+    <ImageView
+
+        android:id="@+id/image_edit_user"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_edit"/>
+
+    </LinearLayout>
+</LinearLayout>

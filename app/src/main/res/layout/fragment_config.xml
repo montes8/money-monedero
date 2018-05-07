@@ -1,0 +1,41 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.example.money.fragment.ConfigFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="12"
+        android:background="@drawable/fondo_sesion"
+        android:layout_centerHorizontal="true"
+        android:text="AGREGAR  CATEGORIA"/>
+        <Button
+            android:id="@+id/ver_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:ems="12"
+            android:background="@drawable/fondo_sesion"
+            android:layout_centerHorizontal="true"
+            android:text="ver  usuarios"/>
+        <Button
+        android:id="@+id/button_grafico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+            android:background="@drawable/fondo_sesion"
+        android:layout_marginTop="300dp"
+        android:text="VER  GRAFICO"/>
+
+    </RelativeLayout>
+</FrameLayout>
