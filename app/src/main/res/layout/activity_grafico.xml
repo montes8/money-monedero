@@ -9,13 +9,13 @@
     tools:context="com.example.money.activities.GraficoActivity">
 
 
-    <LinearLayout
+    <com.github.mikephil.charting.charts.LineChart
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:id="@+id/pantalla"
-        android:orientation="horizontal">
+        android:id="@+id/chart"
+        android:orientation="horizontal"/>
 
-    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
