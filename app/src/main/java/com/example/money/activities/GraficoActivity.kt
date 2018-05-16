@@ -31,6 +31,27 @@ class GraficoActivity : AppCompatActivity() {
         chart=findViewById<LineChart>(R.id.chart)
 
 
+//AGREGA UN ALUINEA DE LIMITES AL GRAFICO
+        val vpper_limit= LimitLine(65f,"Danger")
+        vpper_limit.lineWidth=4f
+        vpper_limit.enableDashedLine(10f,10f,0f)
+        vpper_limit.labelPosition=LimitLine.LimitLabelPosition.RIGHT_TOP
+        vpper_limit.textSize=15f
+        val lower_limit=LimitLine(65f,"Danger")
+        lower_limit.lineWidth=4f
+        lower_limit.enableDashedLine(10f,10f,0f)
+        lower_limit.labelPosition=LimitLine.LimitLabelPosition.RIGHT_TOP
+        lower_limit.textSize=15f
+        val leftAxis=chart.axisLeft
+        leftAxis.removeAllLimitLines()
+        leftAxis.addLimitLine(vpper_limit)
+        leftAxis.addLimitLine(lower_limit)
+        leftAxis.axisMaximum=100f
+        leftAxis.axisMinimum=25f
+        leftAxis.setDrawLimitLinesBehindData(true)
+        chart.axisRight.isEnabled=false
+        chart.onChartGestureListener
+
 
         chart.isDragEnabled
         chart.setScaleEnabled(false)
@@ -88,6 +109,8 @@ class GraficoActivity : AppCompatActivity() {
         var mvalues:ArrayList<String> = values
 
         override fun getFormattedValue(value: Float, axis: AxisBase?): String {
+
+
             return mvalues[value.toInt()]
         }
 
